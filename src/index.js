@@ -20,10 +20,11 @@ class ControlledInput extends React.Component {
   render(){
     return(
       <div>
+        <h1>React - Example of Control Input</h1>
         <h3>Please type in the box:</h3>
         <input value={this.state.input} onChange={this.handleChange}/>
         <h4>Controlled Input:</h4>
-        <p>{this.state.input}</p>
+        <p style={{color: "blue", fontWeight: "bold"}}>{this.state.input}</p>
       </div>
     )
   }
